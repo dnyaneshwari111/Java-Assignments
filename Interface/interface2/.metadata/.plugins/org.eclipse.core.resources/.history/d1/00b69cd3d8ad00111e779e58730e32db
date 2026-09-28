@@ -1,0 +1,13 @@
+package Custom;
+
+public interface iCalculator {
+	double add(int a,int b);
+	double sub(int a,int b);
+	double mul(int a,int b);
+	double div(int a,int b);
+	
+	double sin(double angle);
+	double cos(double angle);
+	double tan(double angle);
+	
+}

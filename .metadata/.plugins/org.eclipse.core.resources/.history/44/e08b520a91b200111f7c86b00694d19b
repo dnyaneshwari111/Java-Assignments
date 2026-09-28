@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class StringDemo {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		Set<String> words=new TreeSet<>((o1,o2)->{
+			int diff=0;
+			diff=o1.length()-o2.length();
+			if(diff !=0)
+				return diff;
+			return diff=o1.compareTo(o2);
+		});
+			
+		words.add("Java");
+		words.add("Python");
+		words.add("Char");
+		words.add("Hi");
+		words.add("int");
+		
+		for(int i=0;i<5;i++) {
+			words.add(sc.next());
+		}
+		System.out.println("String sorted by length then alphabetical :");
+		words.forEach(System.out::println);
+		sc.close();
+		
+		
+		}
+
+	}
+
+}

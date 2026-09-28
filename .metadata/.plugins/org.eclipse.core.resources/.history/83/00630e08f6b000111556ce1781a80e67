@@ -1,0 +1,16 @@
+package FILEIO;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class BufferWriting {
+
+	public static void main(String[] args) throws IOException
+	{
+		
+				BufferedWriter bw = new BufferedWriter(new FileWriter("D:/myfiles/buffer.txt",true));
+
+	}
+
+}

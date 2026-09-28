@@ -1,0 +1,34 @@
+package calculation;
+
+import Custom.iCalculator;
+
+public class SimpleCalculator implements iCalculator {
+
+	
+	System.out.println("Addition is"+sm.add(10,20));
+//	@Override
+//	public double add(int a, int b) {
+//		// TODO Auto-generated method stub
+//		return a+b;
+//	}
+//
+//	@Override
+//	public double sub(int a, int b) {
+//		// TODO Auto-generated method stub
+//		return a-b;
+//	}
+//
+//	@Override
+//	public double mul(int a, int b) {
+//		// TODO Auto-generated method stub
+//		return a*b;
+//	}
+//
+//	@Override
+//	public double div(int a, int b) {
+//		// TODO Auto-generated method stub
+//		return a/b;
+	
+	}
+
+}

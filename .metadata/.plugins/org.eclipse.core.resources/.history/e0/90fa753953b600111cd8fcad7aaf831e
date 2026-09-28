@@ -1,0 +1,37 @@
+package FilesDisplay;
+
+public class DisplayFilesMain {
+
+	public static void main(String[] args) {
+		DisplayFilesapp j1=new DisplayFilesapp("D:\\JavaCodes\\data.txt");
+		DisplayFilesapp j2=new DisplayFilesapp("D:\\JavaCodes\\data.txt");
+		DisplayFilesapp j3=new DisplayFilesapp("D:\\JavaCodes\\data.txt");
+		
+		
+System.out.println("File display will begin....");
+		
+		//runnable
+		j1.getT().start();
+		j2.getT().start();
+		j3.getT().start();
+		
+		//main thread should wait
+		try {
+			j1.getT().join();
+			j2.getT().join();
+			j3.getT().join();
+		}
+		catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("File display will end....");
+		
+
+	}
+
+}
+
+		
+	
+

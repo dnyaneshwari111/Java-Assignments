@@ -1,0 +1,98 @@
+package FILEIO;
+
+
+	import java.io.BufferedReader;
+
+	import java.io.FileReader;
+
+	import java.io.FileWriter;
+
+	import java.io.IOException;
+
+	import java.io.InputStreamReader;
+
+
+
+	public class BufferWriting{
+
+
+
+	    public static void main(String[] args) {
+
+	        BufferedReader br = null;
+
+	        FileReader fr = null;
+
+	        FileWriter fw = null;
+
+
+
+	        try {
+
+	            br = new BufferedReader(new InputStreamReader(System.in));
+
+
+
+	            // Ask user for file name
+
+	            System.out.print("Enter file name: ");
+
+	            String fname = br.readLine();
+
+
+
+	            // Ask user for data
+
+	            System.out.print("Enter data to write: ");
+
+	            String data = br.readLine();
+
+
+
+	            // Write data into file
+
+	            fw = new FileWriter(fname); // overwrites file
+
+	            fw.write(data);
+
+	            fw.close();
+
+	            // Read data back from file
+
+	            fr = new FileReader(fname);
+
+	            BufferedReader fbr = new BufferedReader(fr);
+
+
+
+	            System.out.println("\nData from file:");
+
+	            String line;
+
+	            while ((line = fbr.readLine()) != null) {
+
+	                System.out.println(line);
+
+	            }
+
+
+
+	            fbr.close();
+
+	            fr.close();
+
+	            br.close();
+
+
+
+	        } catch (IOException e) {
+
+	            e.printStackTrace();
+
+	        }
+
+	    }
+
+	}
+
+

@@ -1,0 +1,26 @@
+package main;
+import calculation.SimpleCalculator2;
+import calculation.ScientificCalculator;
+
+public class Test  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SimpleCalculator2 sm= new SimpleCalculator2();
+		ScientificCalculator ss = new ScientificCalculator();
+		sm.add(10,20);
+		sm.sub(15, 5);
+		sm.mul(5, 3);
+		sm.div(15, 5);
+		System.out.println("Addition is"+sm.add(10,20));
+		System.out.println("Substraction is"+sm.sub(100,20));
+		System.out.println("Multiplication is"+sm.mul(10,20));
+		System.out.println("Division is"+sm.div(10,20));
+		
+		System.out.println("Sin:"ss.sin(90));
+		System.out.println("Sin:"ss.cos(90));
+		System.out.println("Sin:"ss.tan(90));
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package main;
+
+import Custom.iCalculator;
+
+public class Test implements iCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

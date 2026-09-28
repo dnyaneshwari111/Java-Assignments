@@ -1,0 +1,10 @@
+package Divisor;
+
+public class DivisorMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

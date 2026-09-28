@@ -1,0 +1,13 @@
+package multipleThread;
+
+public class MultipleChilThread {
+
+	public static void main(String[] args) {
+		CountDownJob j1=new CountDownJob("First",110);
+		CountDownJob j2=new CountDownJob("Second",110);
+		CountDownJob j3=new CountDownJob("Third",110);
+		
+
+	}
+
+}

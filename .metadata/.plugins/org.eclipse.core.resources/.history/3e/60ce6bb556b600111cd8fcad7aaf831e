@@ -1,0 +1,16 @@
+package Divisor;
+
+public class DivisorMain {
+
+	public static void main(String[] args) {
+		DivisorThread t1=new DivisorThread(30);
+		DivisorThread t2=new DivisorThread(30);
+		DivisorThread t3=new DivisorThread(30);
+		
+		t1.start();
+		t2.start();
+		t3.start();
+
+	}
+
+}

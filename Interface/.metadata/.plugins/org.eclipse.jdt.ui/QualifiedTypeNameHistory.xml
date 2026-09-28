@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="shapes.Circle"/>
+    <fullyQualifiedTypeName name="shapes.Rectangle"/>
+    <fullyQualifiedTypeName name="shapes.Triangle"/>
+    <fullyQualifiedTypeName name="custom.Drawable"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,73 @@
+import java.io.BufferedReader;
+
+import java.io.FileReader;
+
+import java.io.FileWriter;
+
+import java.io.IOException;
+
+import java.io.InputStreamReader;
+
+
+
+public class SourceToDestination {
+	
+    public static void main(String[] args) {
+
+        BufferedReader br = null;
+
+        FileReader fr = null;
+
+        FileWriter fw = null;
+        
+        try {
+
+            br = new BufferedReader(new InputStreamReader(System.in));
+
+
+
+            System.out.print("Enter source file: ");
+
+            String source = br.readLine();
+
+
+
+            System.out.print("Enter destination file: ");
+
+            String destination = br.readLine();
+
+
+
+            fr = new FileReader(source);
+
+            fw = new FileWriter(destination);
+
+            int ch;
+
+            while ((ch = fr.read()) != -1) {
+
+                fw.write(ch);
+
+            }
+
+
+            fr.close();
+
+            fw.close();
+
+            br.close();
+
+
+
+            System.out.println("File copied successfully!");
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }
+
+    }
+
+}
+

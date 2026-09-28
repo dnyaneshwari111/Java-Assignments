@@ -1,0 +1,37 @@
+package Divisor;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class DivisorThread extends Thread{
+	private int number;
+
+
+	  DivisorThread(int number) {
+		
+		 this.number=number;
+		 
+	}
+
+	 public static synchronized void writeDivisor(int number) {
+		 try {
+			 FileWriter fw=new FileWriter("divisor.txt");
+			 fw.write("Divisor of "+number+"are :");
+			 for(int i=1;i<=number;i++) {
+				 if(number%i==0) {
+					 fw.write(i +"");
+				 }
+			 }
+			 fw.write("\n");
+			 fw.close();
+		 }
+		 catch(IOException e) {
+			 System.out.println(e);
+		 }
+	 }
+		 public void run() {
+			 writeDivisor(number);
+		 }
+	 }
+
+

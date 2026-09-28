@@ -1,0 +1,34 @@
+package InterThreadCommunication;
+
+public class Consumer {
+
+	//2
+	private Thread t;
+	private Stock s;
+	private boolean bRun;
+	
+	public Consumer(Stock s) {
+		this.s = s;
+		this.bRun = true;
+		//3
+		this.t = new Thread(this);
+	}
+	
+	//4
+	public void run() {
+		while(bRun)
+			s.consume();
+	}
+	
+	//5
+	public Thread getT() {
+		return t;
+	}
+
+	public void setbRun(boolean bRun) {
+		this.bRun = bRun;
+	}
+	
+	
+
+}
